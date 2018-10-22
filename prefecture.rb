@@ -50,4 +50,5 @@ prefecture = {
 }
 return p prefecture.select {|k, v| k == en }
 end
-convert_prefecture("Kumamoto")
+convert_prefecture(ARGV[0])
+# % ruby ./prefecture.rb "Oita" # => {"Oita"=>"大分県"}
